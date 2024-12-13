@@ -6,6 +6,7 @@ module.exports = function(api) {
         '@babel/plugin-proposal-export-default-from',
         '@babel/plugin-proposal-export-namespace-from',
         '@babel/plugin-syntax-dynamic-import',
+        'react-native-reanimated/plugin',
         '@babel/plugin-transform-modules-commonjs', // Ensures ES modules are transpiled correctly
       ],
     };

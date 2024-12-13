@@ -3,6 +3,7 @@
     "name": "week12",
     "slug": "week12",
     "version": "1.0.0",
+    "entryPoint": "./App.tsx",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -46,9 +47,6 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": {
-        "origin": false
-      },
       "eas": {
         "projectId": "6fbaec89-a651-4295-aada-22cfa25b07e1"
       }

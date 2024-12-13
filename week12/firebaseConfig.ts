@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported } from "firebase/analytics";
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 
 dotenv.config(); // Load environment variables
 

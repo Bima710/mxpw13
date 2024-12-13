@@ -1,22 +1,24 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { store } from './redux/store';
-import AppContent from './components/AppContent';
-import Counter from './components/Counter';
+import { StyleSheet, Text, View } from 'react-native';
+import Constants from 'expo-constants';
 
-const Stack = createNativeStackNavigator();
+const App = () => {
+  const { manifest } = Constants;
+  const API_KEY = manifest?.extra?.apiKey;
 
-const App = () => (
-  <Provider store={store}>
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="AppContent">
-        <Stack.Screen name="AppContent" component={AppContent} />
-        <Stack.Screen name="Counter" component={Counter} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  </Provider>
-);
+  return (
+    <View style={styles.container}>
+      <Text>API Key: {API_KEY}</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
 export default App;

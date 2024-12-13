@@ -29,6 +29,14 @@ plugins {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    implementation 'com.google.firebase:firebase-core:20.0.0'
+    // Other dependencies...
+}
+
 
 allprojects {
     repositories {

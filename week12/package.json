@@ -28,7 +28,8 @@
     "react-native-screens": "~4.1.0",
     "react-native-web": "~0.19.13",
     "react-redux": "^7.2.9",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "expo-constants": "~17.0.3"
   },
   "private": true,
   "devDependencies": {
